@@ -1,0 +1,29 @@
+version: 1
+disable_existing_loggers: false
+filters:
+  main:
+    name: __main__
+    class: logging.Filter
+formatters:
+  simple:
+    format: "%(asctime)s:%(name)s:%(levelname)s:%(message)s"
+    datefmt: "%Y-%m-%dT%H:%M:%S%z"
+handlers:
+  console:
+    class: logging.StreamHandler
+    # Change to "DEBUG" to see all the logs.
+    # Change to "CRITICAL" to see nothing but critical logs.
+    level: INFO
+    formatter: simple
+    # Example of filtering out different logs.
+    # filters: ["main"]
+  file:
+    class: logging.FileHandler
+    level: DEBUG
+    formatter: simple
+    filename: log.log
+    mode: w
+root:
+  level: DEBUG
+  handlers: [file, console]
+  propagate: false
