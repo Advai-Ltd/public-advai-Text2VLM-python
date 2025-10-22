@@ -1,0 +1,9 @@
+{
+    "txt": "text only",
+    "img": "text2vlm",
+    "vicunabench": "vicuna bench\n(control)",
+    "mitre": "mitre\n(cyberattack)",
+    "interpreter": "interpreter\n(cyberattack)",
+    "med": "med safety\n(medical safety)",
+    "toxi": "toxigen\n(hate speech)"
+  }

@@ -1,0 +1,16 @@
+tomli
+mlflow
+pydantic
+numpy
+matplotlib
+jsmin
+tqdm
+anthropic
+opencv-python-headless
+openai
+replicate
+litellm
+tenacity
+streamlit
+pandas
+Pillow
